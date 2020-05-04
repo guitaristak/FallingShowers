@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -484.99997, y: 321}
+  m_AnchoredPosition: {x: 183, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &144595068
@@ -230,7 +230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 408, y: 322}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &249331939
@@ -267,7 +267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -417, y: 323}
+  m_AnchoredPosition: {x: -599.1, y: 323}
   m_SizeDelta: {x: 51.58, y: 51.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249331941
@@ -423,10 +423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e040cc9c599aeb46986649038a5ebd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RocksToSpawn: 6
+  RocksToSpawn: 16
   Rock: {fileID: 814416428007864708, guid: 90701b1a80146624e978f66f12d5b379, type: 3}
   Rocks: {fileID: 1877953605}
-  RockDistance: 15
   minX: -8.45
   maxX: 8.35
 --- !u!1 &531328948
@@ -463,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353.90002, y: 316.80002}
+  m_AnchoredPosition: {x: -536, y: 316.80002}
   m_SizeDelta: {x: 72.8, y: 51.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &531328950
@@ -768,7 +767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -541, y: 321}
+  m_AnchoredPosition: {x: 121, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990205224
@@ -843,7 +842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -599, y: 321}
+  m_AnchoredPosition: {x: 59, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1141943881
@@ -965,7 +964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535251594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3117651, y: 6.8, z: 65.961784}
+  m_LocalPosition: {x: -0.3117651, y: 13.1, z: 65.961784}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

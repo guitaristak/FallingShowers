@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 814416428007864712}
   - component: {fileID: 814416428007864715}
-  - component: {fileID: 814416428007864714}
   - component: {fileID: 814416428007864709}
-  - component: {fileID: -5799045314838092657}
   - component: {fileID: -6239395356142951765}
+  - component: {fileID: -4175172580056347408}
+  - component: {fileID: 3292259793444852471}
   m_Layer: 0
-  m_Name: Coin
-  m_TagString: Coin
+  m_Name: Rock
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814416428007864708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0, z: 0}
-  m_LocalScale: {x: 0.107319, y: 0.107319, z: 0.107319}
+  m_LocalPosition: {x: -0.01, y: -4.28, z: 0}
+  m_LocalScale: {x: 0.11392812, y: 0.11392812, z: 0.11392812}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -514585615
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cd907a0e4b2e75a4faf9e3e738ee3bf4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ffc2a70793cf24f439205e00e853e10a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,25 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &814416428007864714
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814416428007864708}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0442411b835c3124e87d402f3e65050e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &814416428007864709
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117,22 +98,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.3693637}
   serializedVersion: 2
-  m_Radius: 2.8199997
---- !u!114 &-5799045314838092657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814416428007864708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 100d51fa599fe8844ae635c83f47208b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoinGenerator: {fileID: 0}
+  m_Radius: 2.4506361
 --- !u!50 &-6239395356142951765
 Rigidbody2D:
   serializedVersion: 4
@@ -154,3 +122,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-4175172580056347408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814416428007864708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78051ed41ec80be428f4b110f23ec9a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RockGenerator: {fileID: 0}
+--- !u!114 &3292259793444852471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814416428007864708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb6e3de0cefcb34eb32ba777299e9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
