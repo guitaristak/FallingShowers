@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100d51fa599fe8844ae635c83f47208b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinPickup: {fileID: 8300000, guid: ab37252cbdcbc82498a848b23b66e4c8, type: 3}
   CoinGenerator: {fileID: 0}
 --- !u!50 &-6239395356142951765
 Rigidbody2D:

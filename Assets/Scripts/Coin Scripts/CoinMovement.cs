@@ -27,6 +27,7 @@ public class CoinMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player1"))
         {
+            GamePlayAudio.playSound("coinCollect");
             ScoreManager.score += 1;
             Debug.Log(ScoreManager.score);
             CoinRespawn();

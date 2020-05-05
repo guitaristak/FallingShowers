@@ -22,9 +22,11 @@ public class RockMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player1"))
         {
+            GamePlayAudio.playSound("rockHit");
             Health.health -= 1;
             if (Health.health == 0)
             {
+                GamePlayAudio.playSound("gameOver");
                 MovePlayer.isAlive = false;
             }
             RockRespawn();

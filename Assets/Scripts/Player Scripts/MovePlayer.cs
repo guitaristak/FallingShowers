@@ -28,13 +28,11 @@ public class MovePlayer : MonoBehaviour
         animator = GetComponent<Animator> ();
         sr = GetComponent<SpriteRenderer>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         if(isAlive)
         {
-            float move = Input.GetAxisRaw("Horizontal"); //DOUBT (why not working with int move)
+            float move = Input.GetAxisRaw("Horizontal");
             rb.velocity = new Vector2(speed * move, rb.velocity.y);
             if (move < 0)
             {
@@ -57,26 +55,6 @@ public class MovePlayer : MonoBehaviour
             Coins.SetActive(false);
             Rocks.SetActive(false);
             GameEnded.SetActive(true);
-            //StartCoroutine(GameOver());
         }
-        //IEnumerator GameOver()
-        //{
-        //    Coins.SetActive(false);
-        //    Rocks.SetActive(false);
-        //    GameEnded.SetActive(true);
-        //    yield return new WaitForSeconds(1);
-        //}
-        
-        //if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        //{
-        //    rb.velocity = new Vector2(-speed, rb.velocity.y);
-        //    animator.Play("Running");
-        //}
-
-        //else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        //{
-        //    rb.velocity = new Vector2(speed, rb.velocity.y);
-        //    animator.Play("Running");
-        //}
     }
 }
