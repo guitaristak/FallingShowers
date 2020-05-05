@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     public int numOfHearts;
-
+    public static int health = 3;
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
@@ -15,11 +15,11 @@ public class Health : MonoBehaviour
     {
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (RockMovement.health > numOfHearts)
+            if (health > numOfHearts)
             {
-                RockMovement.health = numOfHearts; //If player takes potion even when his health if full
+                health = numOfHearts; //If player takes potion even when his health if full
             }
-            if (i < RockMovement.health)
+            if (i < health)
             {
                 hearts[i].sprite = fullHeart;
             } else

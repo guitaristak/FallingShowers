@@ -21,6 +21,6 @@ public class RockGenerator : MonoBehaviour
     }
     public Vector2 GetNextPosition()
     {
-        return new Vector2(Random.Range(minX, maxX), 55);
+        return new Vector2(Random.Range(minX, maxX), 60);
     }
 }

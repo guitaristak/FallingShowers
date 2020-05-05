@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class RockMovement : MonoBehaviour
 {
-    public static int health = 3;
     public RockGenerator RockGenerator;
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y - 7 * Time.deltaTime, transform.position.z);
+        transform.position = new Vector3(transform.position.x, transform.position.y - 6 * Time.deltaTime, transform.position.z);
         if (transform.position.y < -Camera.main.orthographicSize)
         {
             RockRespawn();
@@ -23,7 +22,11 @@ public class RockMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player1"))
         {
-            health -= 1;
+            Health.health -= 1;
+            if (Health.health == 0)
+            {
+                MovePlayer.isAlive = false;
+            }
             RockRespawn();
         }
     }

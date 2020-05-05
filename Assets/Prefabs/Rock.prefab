@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 814416428007864709}
   - component: {fileID: -6239395356142951765}
   - component: {fileID: -4175172580056347408}
-  - component: {fileID: 3292259793444852471}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Rock
@@ -29,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814416428007864708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -4.28, z: 0}
+  m_LocalPosition: {x: -0.01, y: 2, z: 0}
   m_LocalScale: {x: 0.11392812, y: 0.11392812, z: 0.11392812}
   m_Children: []
   m_Father: {fileID: 0}
@@ -134,16 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78051ed41ec80be428f4b110f23ec9a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   RockGenerator: {fileID: 0}
---- !u!114 &3292259793444852471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814416428007864708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bb6e3de0cefcb34eb32ba777299e9ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

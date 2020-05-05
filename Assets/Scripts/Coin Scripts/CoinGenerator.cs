@@ -20,8 +20,12 @@ public class CoinGenerator : MonoBehaviour
             c.GetComponent<CoinMovement>().CoinGenerator = this;
         }
     }
-    public Vector2 GetNextPosition()
+    public Vector2 GetNextCPosition()
     {
         return new Vector2(Random.Range(minX, maxX), 65);
+    }
+    public Vector2 GetNextPPosition()
+    {
+        return new Vector2(Random.Range(minX, maxX), 67);
     }
 }
