@@ -29,7 +29,6 @@ public class CoinMovement : MonoBehaviour
         {
             GamePlayAudio.playSound("coinCollect");
             ScoreManager.score += 1;
-            Debug.Log(ScoreManager.score);
             CoinRespawn();
         }
     }

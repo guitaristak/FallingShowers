@@ -7,6 +7,10 @@ using TMPro;
 public class MainMenu : MonoBehaviour
 {
     public TextMeshProUGUI hs;
+    void Awake()
+    {
+        ScoreManager.LoadData();
+    }
     public void PlayGame()
     {
         MovePlayer.isAlive = true;
@@ -20,6 +24,7 @@ public class MainMenu : MonoBehaviour
     }
     public void QuitGame()
     {
+        ScoreManager.SaveData();
         Application.Quit();
     }
 }
